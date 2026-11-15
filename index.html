@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b18" />
+  <meta name="description" content="A special cinematic birthday surprise for Nur Hasnat Nishat." />
+  <title>Happy Birthday, Nishat! ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> A LITTLE SURPRISE</a>
+    <button class="sound-toggle" id="soundToggle" aria-pressed="false" title="Toggle gentle music">
+      <span id="soundIcon">♫</span><span id="soundLabel">Sound off</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="eyebrow-line"></span> TODAY IS YOUR DAY <span class="eyebrow-line"></span></div>
+      <p class="small-intro">A little celebration for someone wonderful</p>
+      <h1>Happy Birthday,<br><span>Nur Hasnat Nishat</span></h1>
+      <p class="hero-copy">May your next chapter be filled with bright moments, great adventures, and countless reasons to smile.</p>
+
+      <div class="portrait-wrap">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="portrait-glow"></div>
+        <img class="portrait" src="assets/nishat-portrait.jpg" alt="Portrait of Nur Hasnat Nishat" />
+        <span class="photo-spark spark-a">✦</span><span class="photo-spark spark-b">✧</span>
+        <span class="photo-spark spark-c">✦</span>
+      </div>
+      <div class="date-pill"><span>✧</span> 15 NOVEMBER <span>✧</span></div>
+      <button class="primary-button" id="revealButton">Open your birthday surprise <span>↓</span></button>
+      <div class="scroll-note">SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="message-section section reveal" id="message">
+      <div class="section-kicker">A MESSAGE FOR YOU</div>
+      <h2>Here’s to <em>you.</em></h2>
+      <article class="letter-card">
+        <div class="letter-icon">✉</div>
+        <p class="letter-lead">Dear Nishat,</p>
+        <p>Wishing you a birthday full of happiness, peace, laughter, and unforgettable memories. Keep believing in yourself, keep chasing the things that make you happy, and never stop being the person who makes the people around him smile.</p>
+        <p>May every new day bring you something worth looking forward to. Have an amazing year ahead!</p>
+        <div class="letter-sign">With warm wishes <span>♥</span></div>
+      </article>
+    </section>
+
+    <section class="cake-section section reveal" id="cake">
+      <div class="section-kicker">MAKE A WISH</div>
+      <h2>A cake <em>for you.</em></h2>
+      <p class="section-copy">Take a moment, make a wish, and tap the button to blow out the candles.</p>
+      <div class="cake-stage">
+        <div class="cake-glow"></div>
+        <div class="candles">
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+          <div class="candle"><i class="flame"></i></div>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-body"><span class="icing icing-one"></span><span class="icing icing-two"></span><span class="icing icing-three"></span></div>
+        <div class="cake-plate"></div>
+      </div>
+      <button class="secondary-button" id="blowButton">✧ Blow out the candles</button>
+      <p class="wish-result" id="wishResult" aria-live="polite"></p>
+    </section>
+
+    <section class="closing-section section reveal">
+      <div class="closing-star">✦</div>
+      <h2>Keep shining,<br><em>Nishat.</em></h2>
+      <p>Today, tomorrow, and always — wishing you the very best.</p>
+      <button class="primary-button" id="celebrateButton">Celebrate again <span>✦</span></button>
+      <footer>MADE WITH <span>♥</span> FOR NUR HASNAT NISHAT</footer>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
